@@ -13,9 +13,13 @@ def convert_kg():
     grams = float(e1_value.get())*1000
     pounds = float(e1_value.get())*2.20462
     ounces = float(e1_value.get())*35.274
+    t1.delete(1.0,END)
     t1.insert(END,grams)
+    t2.delete(1.0,END)
     t2.insert(END,pounds)
-    t3.insert(END,ounces)        
+    t3.delete(1.0,END)
+    t3.insert(END,ounces)
+            
 
 l1 = Label(window, text="Kg")
 l1.grid(row=0, column=0)
