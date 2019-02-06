@@ -1,0 +1,7 @@
+create table json_data
+(
+ id NUMBER generated always as identity,
+ name varchar2(4000),
+ workday date,
+ hours   number
+)
